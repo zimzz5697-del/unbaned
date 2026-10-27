@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporan WA Otomatis - Timbang Akun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📱 Laporan WA Otomatis</h1>
+      <p class="subtitle">Timbang Akun Terkena Spam - Kirim ke Center WA via Gmail</p>
+    </header>
+
+    <div class="card">
+      <h2>📝 Form Laporan</h2>
+      
+      <div class="form-group">
+        <label>Nomor WhatsApp Terdampak</label>
+        <input type="text" id="waNumber" placeholder="Contoh: 6281234567890" required>
+      </div>
+
+      <div class="form-group">
+        <label>Nama Akun / Bisnis</label>
+        <input type="text" id="accountName" placeholder="Nama akun yang ditangguhkan" required>
+      </div>
+
+      <div class="form-group">
+        <label>Jenis Masalah</label>
+        <select id="issueType">
+          <option value="spam">Terkena Spam / Ditangguhkan</option>
+          <option value="banned">Akun Dibanned</option>
+          <option value="limited">Dibatasi Sementara</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Deskripsi Masalah</label>
+        <textarea id="description" rows="4" placeholder="Jelaskan kronologi & bukti..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Pilih Slot Gmail (Pengirim)</label>
+        <select id="gmailSlot">
+          <option value="slot1">📧 Slot 1 - zukoi@gmail.com</option>
+          <option value="slot2">📧 Slot 2 - zimzz@gmail.com</option>
+          <option value="slot3">📧 Slot 3 - persib@gmail.id</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Email Center WA (Tujuan)</label>
+        <input type="email" id="targetEmail" value="support@support.whatsapp.com" readonly>
+      </div>
+
+      <button id="sendBtn" class="btn-primary">🚀 Kirim Laporan Otomatis</button>
+      
+      <div id="status" class="status"></div>
+    </div>
+
+    <div class="card">
+      <h2>📊 Riwayat Laporan</h2>
+      <div id="history" class="history">
+        <p class="empty">Belum ada laporan terkirim.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
