@@ -10,9 +10,9 @@ const CONFIG = {
   
   // 3 Slot Gmail - hanya label, pengaturan akun di GAS
   GMAIL_SLOTS: {
-    slot1: "Gmail Utama",
-    slot2: "Gmail Cadangan",
-    slot3: "Gmail Backup"
+    slot1: "zimzz1@gmail.com",
+    slot2: "zimzz2@gmail.com",
+    slot3: "zimzz3@gmail.com"
   }
 };
 
